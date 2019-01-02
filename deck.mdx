@@ -1,0 +1,73 @@
+import { Head } from 'mdx-deck'
+
+export { default as theme } from './theme'
+
+<Head>
+  <title>Presentation Title</title>
+</Head>
+
+## Custom Babel Plugin
+
+by
+
+Jaya Krishna 🏔 🏎 🏍 💻 🏸 🎧 
+
+---
+
+## Why Babel ?
+
+<small>The compiler of next generation</small>
+
+---
+
+## Abstract Syntax Tree (AST)
+
+<https://astexplorer.net/>
+
+---
+
+## Babylon !!
+
+---
+
+### Input 
+
+```javascript
+console.log('sdkjfnskdnf');
+
+function demo() {
+    console.log('sdfnsdnfkjsdf');
+}
+
+() => {
+    console.log(' this is arrow function');
+}
+
+abc.console();
+
+log.console();
+
+```
+---
+
+### Output
+
+```javascript
+"use strict";
+
+function demo() {}
+
+(function () {});
+
+abc.console();
+log.console();
+
+```
+
+---
+
+## Codemod !!
+
+<small>
+  Codemod is a tool/library to assist you with large-scale codebase refactors 
+</small>
