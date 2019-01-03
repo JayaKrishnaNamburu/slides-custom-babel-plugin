@@ -3,7 +3,7 @@ import { Head } from 'mdx-deck'
 export { default as theme } from './theme'
 
 <Head>
-  <title>Presentation Title</title>
+  <title>Custom Babel Plugin</title>
 </Head>
 
 ## Custom Babel Plugin
@@ -18,15 +18,43 @@ Jaya Krishna 🏔 🏎 🏍 💻 🏸 🎧
 
 <small>The compiler of next generation</small>
 
+```notes
+Show the example by running a simple babel transform for the existing code in dash
+```
+
+---
+
+[ast-examples](https://github.com/kentcdodds/asts-workshop)
+
 ---
 
 ## Abstract Syntax Tree (AST)
 
-<https://astexplorer.net/>
+[AST Visual](http://resources.jointjs.com/demos/javascript-ast)
+
+[AST Explorer Tool](https://astexplorer.net/)
 
 ---
 
 ## Babylon !!
+
+<small>
+  Babylon is a Javascript parser used in Babel
+</small>
+
+```notes
+  Show the example of how dash works
+```
+
+---
+
+### Presets and Plugins
+
+[🔌](https://babeljs.io/docs/en/plugins)
+
+---
+
+### Time to write out first babel plugin ⏳
 
 ---
 
@@ -64,10 +92,24 @@ log.console();
 
 ```
 
+[Online Babel Compiler](https://babeljs.io/en/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=Q&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Ces2016%2Creact%2Cstage-2&prettier=false&targets=&version=6.26.0&envVersion=1.6.2')
+
+---
+
+### How babel helps you for Codemod ?? 🤔
+
 ---
 
 ## Codemod !!
 
 <small>
-  Codemod is a tool/library to assist you with large-scale codebase refactors 
+  Codemods take a JS file as input and turn them into Abstract Syntax Trees (AST) and
+  apply transformations on this AST later converting them back to JS again.
 </small>
+
+[Blog](https://vramana.github.io/blog/2015/12/21/codemod-tutorial/)
+
+
+[Example](https://github.com/babel/babel/tree/master/codemods/babel-plugin-codemod-object-assign-to-object-spread)
+
+---
