@@ -10,7 +10,7 @@
     "help": "mdx-deck"
   },
   "keywords": [],
-  "author": "Brent Jackson",
+  "author": "Jaya Krishna",
   "license": "MIT",
   "devDependencies": {
     "mdx-deck": "^1.6.7"

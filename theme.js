@@ -1,7 +1,5 @@
 import { yellow as theme } from 'mdx-deck/themes'
 
-console.log(theme);
-
 export default {
   ...theme,
   colors: {
