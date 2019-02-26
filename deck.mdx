@@ -3,10 +3,10 @@ import { Head } from 'mdx-deck'
 export { default as theme } from './theme'
 
 <Head>
-  <title>Custom Babel Plugin</title>
+  <title>Generating Custom Babel Plugin</title>
 </Head>
 
-## Custom Babel Plugin
+## Generating Custom Babel Plugin
 
 by
 
@@ -16,15 +16,32 @@ Jaya Krishna 🏔 🏎 🏍 💻 🏸 🎧
 
 ![image](https://raw.githubusercontent.com/babel/logo/master/babel.png)
 
-<small>The compiler of next generation</small>
+<small>The compiler of next generation by Henry</small>
 
 ```notes
+Talk about why we need to use babel, why the tranformation is actually needed
+Talk about the preset that Create React App uses by default, babel-preset-env
 Show the example by running a simple babel transform for the existing code in dash
+```
+---
+[🤔 The Aha Moment !!](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
+
+```notes
+Talk about the main target for front end engineers !! (To ship less code as possbile so
+you can save some compile and parse time).
+Talk about why we still ship es2015 compiled code to even the latest browsers
 ```
 
 ---
 
-[ast-examples](https://github.com/kentcdodds/asts-workshop)
+![image](https://user-images.githubusercontent.com/11075561/53421937-8c526100-3a04-11e9-8b9a-186ad790ee55.png)
+
+![image](https://user-images.githubusercontent.com/11075561/53422085-ca4f8500-3a04-11e9-85aa-2a002ad52998.png)
+---
+
+### Presets and Plugins
+
+[🔌](https://babeljs.io/docs/en/plugins)
 
 ---
 
@@ -36,21 +53,28 @@ Show the example by running a simple babel transform for the existing code in da
 
 ---
 
-## Babylon !!
+![image](https://img.alicdn.com/tps/TB1nP2ONpXXXXb_XpXXXXXXXXXX-1958-812.png)
+##### [Source Google](http://taobaofed.org/blog/2016/09/30/babel-plugins/)
+---
+
+### Babylon !!
 
 <small>
   Babylon is a Javascript parser used in Babel
 </small>
 
+### Babel Traverse
+
+### Babel Template
+<small>
+  For more complex use cases where user don't need to write a AST manually.
+</small>
+
+### Babel Generator
 ```notes
-  Show the example of how dash works
+  Add all git and npm links for all these libs here
 ```
-
----
-
-### Presets and Plugins
-
-[🔌](https://babeljs.io/docs/en/plugins)
+<!-- [Example-1](https://codesandbox.io/s/001zyj5xpn?fontsize=14) -->
 
 ---
 
