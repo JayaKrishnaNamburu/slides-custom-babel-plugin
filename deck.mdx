@@ -1,9 +1,9 @@
 import { Head } from 'mdx-deck'
-
 export { default as theme } from './theme'
+import TweetEmbed from 'react-tweet-embed'
 
 <Head>
-  <title>Generating Custom Babel Plugin</title>
+  <title>Creating Custom Babel Plugin</title>
 </Head>
 
 ## Generating Custom Babel Plugin
@@ -12,11 +12,15 @@ by
 
 Jaya Krishna 🏔 🏎 🏍 💻 🏸 🎧 
 
+<small>
+  @askjkrishna 
+</small>
+
 ---
 
 ![image](https://raw.githubusercontent.com/babel/logo/master/babel.png)
 
-<small>The compiler of next generation by Henry</small>
+<small>The compiler of next generation</small>
 
 ```notes
 Talk about why we need to use babel, why the tranformation is actually needed
@@ -24,6 +28,7 @@ Talk about the preset that Create React App uses by default, babel-preset-env
 Show the example by running a simple babel transform for the existing code in dash
 ```
 ---
+
 [🤔 The Aha Moment !!](https://philipwalton.com/articles/deploying-es2015-code-in-production-today/)
 
 ```notes
@@ -31,6 +36,10 @@ Talk about the main target for front end engineers !! (To ship less code as poss
 you can save some compile and parse time).
 Talk about why we still ship es2015 compiled code to even the latest browsers
 ```
+
+---
+
+<TweetEmbed id="1082902291328360448" />
 
 ---
 
@@ -57,20 +66,16 @@ Talk about why we still ship es2015 compiled code to even the latest browsers
 ##### [Source Google](http://taobaofed.org/blog/2016/09/30/babel-plugins/)
 ---
 
-### Babylon !!
+Babylon
 
-<small>
-  Babylon is a Javascript parser used in Babel
-</small>
+Babel Traverse
 
-### Babel Traverse
+Babel Template  ☮️️ <small>(The Saviour)</small>
 
-### Babel Template
-<small>
-  For more complex use cases where user don't need to write a AST manually.
-</small>
+Babel Generator
 
-### Babel Generator
+[🔗](https://github.com/jamiebuilds/babel-handbook/blob/master/translations/en/plugin-handbook.md#api)
+
 ```notes
   Add all git and npm links for all these libs here
 ```
