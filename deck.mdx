@@ -11,7 +11,7 @@ import Sandbox from './components/Sandbox';
 
 by
 
-Jaya Krishna 🏔 🏎 🏍 💻 🏸 🎧 
+Jaya Krishna 🏔 🏍 💻 🏸 🎧 
 
 <small>
   @askjkrishna 
@@ -24,9 +24,14 @@ Jaya Krishna 🏔 🏎 🏍 💻 🏸 🎧
 <small>The compiler of next generation</small>
 
 ```notes
-Talk about why we need to use babel, why the tranformation is actually needed
-Talk about the preset that Create React App uses by default, babel-preset-env
-Show the example by running a simple babel transform for the existing code in dash
+Tell a real workd exmaple about the Google translate and why we are actually using it.
+-Making browsers understand of what we are actually speaking about.
+-Talk about why we need to use babel, why the tranformation is actually needed
+
+Why we need to know how frameworks or repos configuring Babel
+-Ask how many people saw three idiots and refer the example of Farewell speech
+-The best and beautiful example of why we need to learn is (Why image compression is not added in 
+CRA's pipeline).
 ```
 ---
 
@@ -37,7 +42,6 @@ Talk about the main target for front end engineers !! (To ship less code as poss
 you can save some compile and parse time).
 Talk about why we still ship es2015 compiled code to even the latest browsers
 ```
-
 ---
 
 <TweetEmbed id="1082902291328360448" />
@@ -51,7 +55,16 @@ Talk about why we still ship es2015 compiled code to even the latest browsers
 
 ### Presets and Plugins
 
-[🔌](https://babeljs.io/docs/en/plugins)
+[🔌 Plugins](https://babeljs.io/docs/en/plugins)
+
+[preset-env](https://babeljs.io/docs/en/babel-preset-env)
+
+[preset-react-app](https://www.npmjs.com/package/babel-preset-react-app)
+
+```notes
+Talk about the preset that Create React App uses by default, babel-preset-env
+Show the example by running a simple babel transform for the existing code in dash
+```
 
 ---
 
@@ -132,26 +145,56 @@ log.console();
 
 ---
 
-### How babel helps you for Codemod ?? 🤔
+### Lets see few plugins 
+
+[Spread](https://github.com/babel/babel/tree/master/codemods/babel-plugin-codemod-object-assign-to-object-spread)
+
+[transform-react-constants](https://babeljs.io/docs/en/babel-plugin-transform-react-constant-elements)
+```notes
+  transform-react-constants -- Used by react in their production mode.
+```
+
+[plugin-lodash](https://github.com/lodash/babel-plugin-lodash)
+
+[remove-prop-types](https://github.com/oliviertassinari/babel-plugin-transform-react-remove-prop-types)
+
 
 ---
 
 ## Codemod !!
 
-<small>
-  Codemods take a JS file as input and turn them into Abstract Syntax Trees (AST) and
-  apply transformations on this AST later converting them back to JS again.
-</small>
-
 [📖](https://vramana.github.io/blog/2015/12/21/codemod-tutorial/)
-
-
-[🏆](https://github.com/babel/babel/tree/master/codemods/babel-plugin-codemod-object-assign-to-object-spread)
 
 ---
 
-Codemod example for block scope variables
+Codemod example
 
-[Codemod](https://github.com/getify/You-Dont-Know-JS/blob/f0d591b6502c080b92e18fc470432af8144db610/scope%20%26%20closures/apB.md)
+<!-- [Codemod](https://github.com/getify/You-Dont-Know-JS/blob/f0d591b6502c080b92e18fc470432af8144db610/scope%20%26%20closures/apB.md) -->
 
-[🏆](https://github.com/babel/babel/tree/master/codemods/babel-plugin-codemod-optional-catch-binding)
+[assign-to-spread](https://github.com/babel/babel/tree/master/codemods/babel-plugin-codemod-object-assign-to-object-spread)
+
+[optional-catch-binding](https://github.com/babel/babel/tree/master/codemods/babel-plugin-codemod-optional-catch-binding)
+
+---
+
+
+<TweetEmbed id="979379515133632512" />
+
+[user-exp/dev-exp](https://alistapart.com/article/breaking-the-deadlock-between-user-experience-and-developer-experience#section12)
+
+---
+
+Compiling vs Polyfilling
+
+[🔗](https://tylermcginnis.com/compiling-polyfills/)
+
+---
+
+# Thank You 😃
+
+```notes
+workflow:-
+
+1. Start telling about me
+2. Speak a little about compilers
+```
